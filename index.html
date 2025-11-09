@@ -3,113 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Organizational Culture and Change Management | Jain University</title>
+  <title>Organizational Culture and Change Management</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <style>
-    body { font-family: 'Poppins', sans-serif; margin:0; background:#f3f9fb; color:#333; line-height:1.6; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f3f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
 
     header {
-      background:linear-gradient(90deg,#00334d,#006680);
-      color:white;
-      text-align:center;
-      padding:1.5em 0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:15px;
-      flex-wrap:wrap;
-      box-shadow:0 4px 8px rgba(0,0,0,0.25);
-    }
-    .logo {
-      height:70px; width:auto; border-radius:8px; box-shadow:0 2px 6px rgba(255,255,255,0.3);
+      background: linear-gradient(90deg, #004466, #007799);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    nav {
-      background:#004d66;
-      text-align:center;
-      padding:0.8em 0;
-      position:sticky;
-      top:0;
-      z-index:1000;
-      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    header img {
+      height: 60px;
+      border-radius: 8px;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+
     nav a {
-      color:#f0f0f0;
-      text-decoration:none;
-      margin:0 14px;
-      font-weight:600;
-      padding:6px 12px;
-      border-radius:6px;
-      transition:0.3s;
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
     }
-    nav a:hover, nav a.active { background:#00a8cc; color:#fff; }
+
+    nav a:hover {
+      color: #ffe680;
+    }
 
     section {
-      padding:25px;
-      background:white;
-      margin:25px auto;
-      max-width:950px;
-      border-radius:12px;
-      box-shadow:0 0 12px rgba(0,0,0,0.1);
+      padding: 60px 8%;
     }
-    h2 { color:#004466; border-left:5px solid #00a8cc; padding-left:10px; margin-top:25px; }
+
+    h2 {
+      color: #004466;
+      margin-bottom: 15px;
+    }
+
+    .modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .module-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .module-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .module-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #007799;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .module-card a:hover {
+      background-color: #005f73;
+    }
 
     footer {
-      text-align:center;
-      background:#00334d;
-      color:#eee;
-      padding:15px;
-      margin-top:40px;
-      font-size:0.9em;
-      letter-spacing:0.3px;
+      background-color: #004466;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="logo.png" alt="Jain University Logo" class="logo">
-    <div>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="logo.png" alt="Course Logo" />
       <h1>Organizational Culture and Change Management</h1>
-      <p>Comprehensive Course Portal | Jain (Deemed-to-be University)</p>
     </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#modules">Modules</a>
+      <a href="#queries">Queries</a>
+      <a href="#about">About</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html" class="active">Syllabus</a>
-    <a href="tlep.html">TLEP</a>
-    <a href="module1.html">Module 1</a>
-    <a href="module2.html">Module 2</a>
-    <a href="module3.html">Module 3</a>
-    <a href="module4.html">Module 4</a>
-    <a href="module5.html">Module 5</a>
-    <a href="questionbank.html">Question Bank</a>
-    <a href="queries.html">Queries</a>
-  </nav>
-
-  <section>
-    <h2>📘 Course Overview</h2>
+  <!-- HOME SECTION -->
+  <section id="home">
+    <h2>Welcome</h2>
     <p>
-      This course aims to develop a deep understanding of how organizational culture impacts
-      leadership, innovation, and change processes. It integrates frameworks of culture formation,
-      behavior alignment, and strategic adaptation to prepare learners for leading change effectively.
+      Welcome to the <strong>Organizational Culture and Change Management</strong> course repository. 
+      This space provides learning materials, presentations, and resources to help you explore 
+      the dynamics of culture, leadership, and transformation within organizations.
     </p>
+  </section>
 
-    <h2>🎯 Learning Objectives</h2>
-    <ul>
-      <li>Understand the components and dimensions of organizational culture.</li>
-      <li>Examine models and theories of organizational change and transformation.</li>
-      <li>Assess the role of leadership in cultural alignment and change management.</li>
-      <li>Develop strategies for overcoming resistance to change in organizations.</li>
-      <li>Evaluate the effectiveness of culture-driven performance and innovation.</li>
-    </ul>
+  <!-- MODULES SECTION -->
+  <section id="modules">
+    <h2>Course Modules</h2>
+    <div class="modules">
+      <div class="module-card">
+        <h3>Module 1</h3>
+        <p>Introduction to Organizational Culture</p>
+        <a href="Module1.pptx" download>Download</a>
+      </div>
+      <div class="module-card">
+        <h3>Module 2</h3>
+        <p>Managing and Leading Change</p>
+        <a href="Module2.pptx" download>Download</a>
+      </div>
+      <div class="module-card">
+        <h3>Module 3</h3>
+        <p>Building Sustainable Organizational Culture</p>
+        <a href="Module3.pptx" download>Download</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUERIES SECTION -->
+  <section id="queries">
+    <h2>Submit Your Query</h2>
+    <form action="https://formspree.io/f/xyznnljn" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="_replyto" required /><br /><br />
+
+      <label for="query">Your Query:</label><br />
+      <textarea id="query" name="query" rows="5" required></textarea><br /><br />
+
+      <button type="submit" style="background-color:#007799; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">Submit</button>
+    </form>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About This Course</h2>
+    <p>
+      This course emphasizes how organizational culture shapes employee behavior, innovation, 
+      and change management effectiveness. It provides conceptual and applied insights 
+      into leadership, motivation, and organizational transformation practices.
+    </p>
   </section>
 
   <footer>
-    © 2025 Prof. P. B. Rao | Organizational Culture and Change Management | Jain (Deemed-to-be University)
+    © 2025 Department of Management Studies · All Rights Reserved
   </footer>
 </body>
 </html>
-
