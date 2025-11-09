@@ -11,7 +11,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f3f9fb;
+      background: #f4f8fa;
       color: #333;
       line-height: 1.6;
     }
@@ -22,8 +22,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 40px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      padding: 12px 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -31,13 +31,12 @@
 
     header img {
       height: 60px;
-      border-radius: 8px;
+      border-radius: 10px;
     }
 
     header h1 {
       margin: 0;
       font-size: 1.4rem;
-      letter-spacing: 0.5px;
     }
 
     nav a {
@@ -45,7 +44,7 @@
       text-decoration: none;
       margin-left: 20px;
       font-weight: 500;
-      transition: 0.3s;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
@@ -54,11 +53,18 @@
 
     section {
       padding: 60px 8%;
+      background: #fff;
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     h2 {
       color: #004466;
-      margin-bottom: 15px;
+      border-bottom: 3px solid #007799;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
     }
 
     .modules {
@@ -68,16 +74,16 @@
     }
 
     .module-card {
-      background: white;
+      background: #f8fbfc;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       padding: 20px;
       text-align: center;
-      transition: transform 0.2s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
     }
 
     .module-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
     }
 
     .module-card a {
@@ -88,10 +94,30 @@
       color: white;
       border-radius: 6px;
       text-decoration: none;
-      transition: background 0.3s;
     }
 
     .module-card a:hover {
+      background-color: #005f73;
+    }
+
+    textarea, input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #007799;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
       background-color: #005f73;
     }
 
@@ -99,8 +125,9 @@
       background-color: #004466;
       color: white;
       text-align: center;
-      padding: 15px 10px;
+      padding: 15px;
       font-size: 0.9rem;
+      margin-top: 40px;
     }
 
     @media (max-width: 600px) {
@@ -117,75 +144,112 @@
 
 <body>
   <header>
-    <div style="display: flex; align-items: center; gap: 15px;">
-      <img src="logo.png" alt="Course Logo" />
+    <div style="display:flex; align-items:center; gap:15px;">
+      <img src="logo.png" alt="Course Logo">
       <h1>Organizational Culture and Change Management</h1>
     </div>
 
     <nav>
       <a href="#home">Home</a>
+      <a href="#syllabus">Syllabus</a>
       <a href="#modules">Modules</a>
       <a href="#queries">Queries</a>
       <a href="#about">About</a>
     </nav>
   </header>
 
-  <!-- HOME SECTION -->
+  <!-- HOME -->
   <section id="home">
     <h2>Welcome</h2>
     <p>
-      Welcome to the <strong>Organizational Culture and Change Management</strong> course repository. 
-      This space provides learning materials, presentations, and resources to help you explore 
-      the dynamics of culture, leadership, and transformation within organizations.
+      Welcome to the course <strong>Organizational Culture and Change Management</strong>.  
+      This subject explores how leadership, culture, and digital transformation shape organizations.  
+      You’ll engage with frameworks, case studies, and models that prepare you to lead purposeful and adaptable enterprises.
     </p>
   </section>
 
-  <!-- MODULES SECTION -->
+  <!-- SYLLABUS -->
+  <section id="syllabus">
+    <h2>Course Syllabus</h2>
+    <p><strong>Course Code:</strong> — <br>
+    <strong>Credits:</strong> 4 | <strong>Hours:</strong> 60</p>
+
+    <h3>Course Objective</h3>
+    <p>To enhance the skills to effectively shape organizational behaviour, implement successful change strategies, foster innovation, manage digital transitions, and build inclusive, adaptable, and sustainable work environments.</p>
+
+    <h3>Module Overview</h3>
+    <ul>
+      <li><strong>Module 1:</strong> Organizational Culture Dynamics – Elements, leadership role, digitalization, frameworks (Schein, Deal & Kennedy), teamwork.</li>
+      <li><strong>Module 2:</strong> Change Management Models – Lewin, Kotter, McKinsey 7-S, ADKAR, Bridges’ Model; leadership and strategies.</li>
+      <li><strong>Module 3:</strong> Building Digital Culture – technology, AI impact, cultural audits, stakeholder engagement, cross-functional collaboration.</li>
+      <li><strong>Module 4:</strong> Agile Change Management – digital-era adaptation, KPIs, ethical transformation, resistance management.</li>
+      <li><strong>Module 5:</strong> Trends & Practices – DEIB, hybrid work, innovation-driven culture, sustainability, CSR, automation.</li>
+    </ul>
+
+    <h3>Course Outcomes (CO)</h3>
+    <ol>
+      <li>Analyze the impact of organizational culture on behavior, decision-making, and digital transformation using cultural frameworks.</li>
+      <li>Interpret change management models and strategies focusing on leadership roles.</li>
+      <li>Assess the role of technology in shaping digital culture and overcoming cultural barriers.</li>
+      <li>Compare agile change strategies and address ethical, digital, and resistance issues.</li>
+      <li>Demonstrate trends in DEIB, hybrid work, and sustainability within change management.</li>
+    </ol>
+
+    <h3>Key References</h3>
+    <ul>
+      <li>Sinha, J. B. P. (2019). <em>Organizational Culture: A Perspective from India</em>. Sage Publications.</li>
+      <li>Sengupta, N. (2018). <em>Change Management: A Case Study Approach</em>. Himalaya Publishing.</li>
+      <li>Nilakant & Ramnarayan (2024). <em>Change Management: Altering Mindsets</em>. SAGE India.</li>
+      <li>Cameron & Quinn (2019). <em>Diagnosing and Changing Organizational Culture</em>. Wiley.</li>
+      <li>Cummings & Worley (2018). <em>Organization Development and Change</em>. Cengage Learning.</li>
+    </ul>
+  </section>
+
+  <!-- MODULES -->
   <section id="modules">
-    <h2>Course Modules</h2>
+    <h2>Learning Modules</h2>
     <div class="modules">
       <div class="module-card">
         <h3>Module 1</h3>
-        <p>Introduction to Organizational Culture</p>
+        <p>Organizational Culture Dynamics</p>
         <a href="Module1.pptx" download>Download</a>
       </div>
       <div class="module-card">
         <h3>Module 2</h3>
-        <p>Managing and Leading Change</p>
+        <p>Change Management Models</p>
         <a href="Module2.pptx" download>Download</a>
       </div>
       <div class="module-card">
         <h3>Module 3</h3>
-        <p>Building Sustainable Organizational Culture</p>
+        <p>Building Digital Culture</p>
         <a href="Module3.pptx" download>Download</a>
       </div>
     </div>
   </section>
 
-  <!-- QUERIES SECTION -->
+  <!-- QUERIES -->
   <section id="queries">
     <h2>Submit Your Query</h2>
     <form action="https://formspree.io/f/xyznnljn" method="POST">
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="_replyto" required /><br /><br />
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="_replyto" required><br><br>
 
-      <label for="query">Your Query:</label><br />
-      <textarea id="query" name="query" rows="5" required></textarea><br /><br />
+      <label for="query">Your Query:</label><br>
+      <textarea id="query" name="query" rows="5" required></textarea><br><br>
 
-      <button type="submit" style="background-color:#007799; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT -->
   <section id="about">
     <h2>About This Course</h2>
     <p>
-      This course emphasizes how organizational culture shapes employee behavior, innovation, 
-      and change management effectiveness. It provides conceptual and applied insights 
-      into leadership, motivation, and organizational transformation practices.
+      This course prepares learners to analyze and manage culture and change in modern organizations.
+      By combining theory and application, it develops leadership insights to design adaptive, digital-ready, and ethically grounded workplaces.
     </p>
   </section>
 
